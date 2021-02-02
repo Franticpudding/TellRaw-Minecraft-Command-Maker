@@ -54,7 +54,7 @@ void colour() {
 	else if (wantColour == false) {
 
 		cout << "\n---------------------------------------------";
-		cout << "\nWho do you want to TellRaw to? \n\nOptions:\n@a (All players),\n@p (Closest player),\n@a (Tell to yourself),\n@(username) (Tell to a certain player)\n\n";
+		cout << "\nWho do you want to TellRaw to? \n\nOptions:\n@a (All players),\n@p (Closest player),\n@a (Tell to yourself),\n(username) (Tell to a certain player)\n\n";
 		cin >> target;
 		cin.ignore();
 
@@ -86,7 +86,7 @@ int main() {
 			while (again == 'y' || again == 'Y') {
 
 				cout << "\n---------------------------------------------";
-				cout << "\nWho do you want to TellRaw to? \n\nOptions:\n@a (All players),\n@p (Closest player),\n@a (Tell to yourself),\n@(username) (Tell to a certain player)\n\n";
+				cout << "\nWho do you want to TellRaw to? \n\nOptions:\n@a (All players),\n@p (Closest player),\n@a (Tell to yourself),\n(username) (Tell to a certain player)\n\n";
 				cin >> target;
 				cin.ignore();
 
