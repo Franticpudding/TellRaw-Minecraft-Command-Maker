@@ -9,9 +9,6 @@ bool noColour;
 string target;
 string message;
 
-//list of all usable colours
-string allColours[] = { "black,", "dark_blue,", "dark_green,", "dark_aqua,\n", "dark_red,", "dark_purple,", "gold,", "gray,\n", "dark_gray,", "blue,", "green,", "aqua,", "red,\n", "light_purple,", "yellow,", "white," };
-
 //start code function
 void start() {
 
@@ -42,14 +39,10 @@ void colour() {
 	//positive colour request
 	if (wantColour == true) {
 
-		size_t n = sizeof(allColours) / sizeof(allColours[0]);
-
 		cout << "\n\n";
 		cout << "Here are the colour options:\n";
 		cout << "----------------------------------\n";
-		for (size_t i = 0; i < n; i++) {
-			std::cout << allColours[i] << ' ';
-		}
+		cout << "black, dark_blue, dark_green, dark_aqua,\ndark_red, dark_purple, gold, gray,\ndark_green, blue, green, aqua, red,\nlight_purple, yellow, white";
 		cout << "\n----------------------------------";
 		cout << "\n";
 
@@ -103,11 +96,8 @@ int main() {
 				cout << "\n\n------------- Final output -------------\n\n";
 				cout << R"###(/tellraw )###" << target << " " << R"###({"text":")###" << message << R"###(", "color" :")###" << exactColour << R"###("})###" << "\n\n\n";
 
-				cout << "Would you like to repeat? (Y / N)";
+				cout << "Would you like to repeat with the same color? (Y / N)";
 				cin >> again;
-
-				cout << "Thank you for using this code, check out my others on Github.\n\n";
-
 
 			}
 		}
